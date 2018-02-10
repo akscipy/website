@@ -1,15 +1,14 @@
-<!DOCTYPE HTML>
-<html>
-
-  <head>
+<html lang="en-US" langs="en-US" dir="ltr"><head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-112182430-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'UA-112182430-1');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-112182430-1');
     </script>
     <!--/GoogleAnalytics-->
     <meta charset="utf-8">
@@ -17,256 +16,259 @@
     <title>chia.network</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css?v4" type="text/css">
-
-    <link rel="stylesheet" href="../css/bootstrap.min.css?v2" type="text/css">
+    <link rel="stylesheet" href="../css/style.css?v4" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css?v2" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Roboto" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="faviconv2.ico">
     <link rel="manifest" href="/manifest.json">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="apple-mobile-web-app-title" content="Chia">
     <meta name="application-name" content="Chia">
     <meta name="theme-color" content="#ffffff">
-    <meta name="description" content="We're building a blockchain based on proofs of space and time to make a cryptocurrency which is less wasteful, more decentralized, and more secure." />
-    <meta property="og:title" content="Chia: Green money for a digital world" />
-    <meta property="og:url" content="https://chia.network/" />
-    <meta property="og:image" content="https://chia.network/android-chrome-384x384.png" />
-    <meta property="og:description" content="We're building a blockchain based on proofs of space and time to make a cryptocurrency which is less wasteful, more decentralized, and more secure." />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <!-- translation -->
     <meta name="defaultLanguage" content="en-US">
     <meta name="availableLanguages" content="en-US, fr, ja, nl, de, es, sr, pt-BR, tr">
-    <link rel="localization" href="./locales/app.{locale}.ftl">
-    <script defer src="./js/l20n.min.js"></script>
-    <script defer src="./js/locales.js"></script>
+    <link rel="localization" href="/locales/app.{locale}.ftl">
+    <script defer="" src="/js/l20n.min.js"></script>
+    <script defer="" src="/js/locales.js"></script>
     <script defer="" src="/js/bootstrap.min.js"></script>
   </head>
 
-  <body class="layout">
-    <div class="page js-page">
-      <div id="main-wrapper">
-      <nav id="navbar_homepage" class="navbar navbar-light bg-faded ">
-              <a class="navbar-brand" href="/">
-                <img src="../images/chia-logo.svg" class="logo">
-              </a>
-              <ul class="nav justify-content-end">
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="/news/index.html">News</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="/faq/index.html">FAQ</a>
-                </li>
-                <li class="nav-item">
-                  <button type="button" class="btn btn-primary btn-lg" ><a class="jobs_link" href="#jobs">We're hiring!</a></button>
-                  
-                </li>
-              </ul>
-            </nav>
-      <div class="container-fluid" id="main-hero">
-        
-        <div class="container-fluid wrap" >
-         
-        <div class="row">
-          <div class="col">
-            <h1 data-l10n-id="slogan">Green money for a digital world</h1>
-            <p data-l10n-id="mission" class="margin-top"> We're building a blockchain based on proofs of space and time to make a cryptocurrency that is less wasteful, more decentralized, and more secure. </p>
-           
-          </div>
-          <div class="col-7">
-            <img src="../images/main_illo.svg" alt="chia image">
-          </div>
-          </div>
-        </div>
-      </div><!--/main-hero-->
-</div><!--/end of main wrapper-->
-<div class="page_wrapper">
-      
-        <div class="wrap container-fluid" id="announcements">
-          <div class="row">
-            <div class="col">
-              <h4 data-l10n-id="Ready to invest?">Ready to invest?</h4>
-              <h2 data-l10n-id="sell-plan">Chia will be available to the public in the summer of 2018</h2>
-            </div>
-            <div class="col">
-              <div class="centered">
-                <button type="button" class="btn btn-primary btn-lg" ><a class="button-link" target="blank" href="https://groups.google.com/a/chia.network/forum/#!forum/announce">Sign up for annoucements</a></button>
-              </div>
-            </div>
-          </div>
-        </div>
+  <body id="news-feed-page">
+    <nav class="navbar navbar-light bg-faded">
+        <a class="navbar-brand" href="/">
+          <img src="../images/chia-logo.svg" class="logo">
+        </a>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" href="/news/index.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="/faq/index.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-primary btn-lg" ><a class="jobs_link" href="mailto:hello@chia.network">We're hiring!</a></button>
+          </li>
+        </ul>
+      </nav>
 
-
-      <div class="wrap container-fluid" id="learn">
-            <div class="row centered">
-              <div class="col ">
-                <img src="../images/icon_learn.svg">
-              </div>
-              <div class="w-100"></div>
-              <div class="col ">
-                <h2 data-l10n-id="learn-more">Learn More about Chia</h2>
-              </div>
-            </div>
+    <!--header class="hero header">
+      <div class="row">
+        <div class="col-lg-12 wrap">
+          <div class="box">
             <div class="row">
-              <div class="col-1"></div>
-              <div class="col">
-                <div class="info-box">
-                  <p>
-                    <ul>
-                      <li><h4>Talks and Papers</h4></li>
-                       <li>Bram Cohen giving a
-                        <a href="https://www.youtube.com/watch?v=iqxkO7C-cyk&feature=youtu.be">talk</a> at BPASE 2018 based on this very <a href="https://eprint.iacr.org/2017/893">technical paper</a> about Proofs of Space. </li>
-                        <li>Ben Fisch giving a
-                        <a href="https://www.youtube.com/watch?v=qUoagL7OZ1k&feature=youtu.be">talk</a> at BPASE 2018 on Verifiable Delay Functions.</li>
-                      <li data-l10n-id="recent-talk">Bram Cohen's
-                        <a href="https://www.facebook.com/BerkeleyBlockchain/videos/2006069823011271/">talk at Blockchain at Berkeley</a> (starts about 20:00) with
-                        <a href="https://drive.google.com/file/d/0ByHuc4xBso7TaEpWSlozWlpxcVk/view">slides</a>.</li>
-                      <li data-l10n-id="older-talk">Bram Cohen's
-                        <a href="https://www.youtube.com/watch?v=aYG0NxoG7yw">talk at BPASE 2017</a> with
-                        <a href="https://cyber.stanford.edu/sites/default/files/bramcohen.pdf">slides</a>.</li>
-                      
-                    </ul>
-                  </p>
+              <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                <div class="box">
+                  <a href="/"><img src="../images/chia-logo.svg" class="logo"></a>
                 </div>
               </div>
-              <div class="col">
-                <div class="info-box">
-                  <p>
-                    <ul>
-                      <li><h4>News and Information</h4></li>
-                      
-                       <li data-l10n-id="news-link">Follow the latest articles on the <a href="news/">News</a>page.</li>
-                       <li data-l10n-id="faq-link">Visit our <a href="faq/">Frequently Asked Questions (FAQ)</a>to learn more!</li>
-                    </ul>
-                  </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header-->
+    <div class="hero newsfeed">
+      <div class="row">
+        <div class="col-lg-12 ">
+          <div class="box">
+            <div class="wrap container-fluid">
+              <div class="row">
+                <div class="col-lg-6 col-sm-12 col-md-12">
+                  <!--<div class="box" style="text-align:center;"><h2>Get Chia</h2>-->
+                  <div class="box">
+                    <h3 data-l10n-id="in-the-news">Chia in the News</h3></div>
+                </div>
+                <!--div class="col-lg-6  col-sm-12 col-md-12">
+                            <div class="box" data-l10n-id="get-the-latest-news"><br />Get the Latest and Updated Newscast from Chia
+                                <p data-l10n-id="join-announcement-list">
+                                    Join our <a href="https://groups.google.com/a/chia.network/forum/#!forum/announce">announcements list</a> to keep updated.
+                                </p>
+                            </div>
+                        </div--></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 ">
+          <div class="box">
+            <div class="wrap container-fluid smaller">
+              <div class="row">
+                <div class="col-lg-12">
+                  <!-- Added id to articles to make it linkable to home page logo -->
+				          <div class="news-box row" id="california-sunday-magazine">
+                    <div class="col-lg-2 col-sm-12 col-md-12">
+                      <div class="image-box"> <img src="../images/newslogos/california-sunday-magazine.svg" class="logo-news"> </div>
+                    </div>
+                    <div class="col-lg-10 col-sm-12 col-md-8 news-text-content">
+                      <div class="panel-heading news-heading clearfix"> <span>The founder of BitTorrent is on a quest to develop an eco-friendly cryptocurrency</span> <time>Jan 30, 2018 </time> </div>
+                      <div class="description">
+                        <p> I’m standing in the lobby of a skyscraper in San Francisco’s financial district to meet a man who thinks he can fix Bitcoin... </p>
+                        <p>
+                          <a href="https://story.californiasunday.com/bitcoins-inconvenient-truth" target="_blank"><span class="read-more-link">Read more &gt;</span></a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-box row" id="IBTlogo">
+                    <div class="col-lg-2 col-sm-12 col-md-12">
+                      <div class="image-box"> <img src="../images/newslogos/IBTlogo.svg" class="logo-news"> </div>
+                    </div>
+                    <div class="col-lg-10 col-sm-12 col-md-8 news-text-content">
+                      <div class="panel-heading news-heading clearfix"> <span>BitTorrent inventor holds the key to greener, less centralised cryptocurrency mining</span> <time>Dec 13, 2017 </time> </div>
+                      <div class="description">
+                        <p> Bram Cohen, the inventor of BitTorrent, is finalising his thesis for a greener alternative to Bitcoin's proof of work mining algorithm... </p>
+                        <p>
+                          <a href="http://www.ibtimes.co.uk/bittorrent-inventor-holds-key-greener-less-centralised-cryptocurrency-mining-1647724" target="_blank"><span class="read-more-link">Read more &gt;</span></a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-box row">
+                    <div class="col-lg-2 col-sm-12 col-md-12">
+                      <div class="image-box"> <img src="../images/newslogos/IBTlogo.svg" class="logo-news"> </div>
+                    </div>
+                    <div class="col-lg-10 col-sm-12 col-md-8 news-text-content">
+                      <div class="panel-heading news-heading clearfix"> <span>Bitcoin Veteran, BitTorrent Creator, Makes An Eco-Friendly Cryptocurrency</span> <time>Nov 09, 2017 </time> </div>
+                      <div class="description">
+                        <p> Some of the bitcoin community’s most experienced developers are creating a more eco-friendly type of cryptocurrency. There’s no word yet if the new San Francisco-based startup, Chia Network, will launch the chia token in 2018 with
+                          an initial coin offering. </p>
+                        <p>
+                          <a href="http://www.ibtimes.com/bitcoin-veteran-bittorrent-creator-makes-eco-friendly-cryptocurrency-2612826" target="_blank"><span class="read-more-link">Read more &gt;</span></a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-box row" id="techcrunch">
+                    <div class="col-lg-2 col-sm-12 col-md-12">
+                      <div class="image-box"> <img src="../images/newslogos/techcrunch.svg" class="logo-news"> </div>
+                    </div>
+                    <div class="col-lg-10 col-sm-12 col-md-8 news-text-content">
+                      <div class="panel-heading news-heading clearfix"> <span>BitTorrent Inventor Announces Eco-Friendly Bitcoin Competitor Chia</span> <time>Nov 08, 2017</time> </div>
+                      <div class="description">
+                        <p> A bitcoin transaction wastes as much electricity as it takes to power an American home for a week, and legendary coder Bram Cohen wants to fix that. And considering he invented the ubiquitous peer-to-peer file transfer protocol
+                          BitTorrent, you should take him seriously. </p>
+                        <p>
+                          <a href="https://techcrunch.com/2017/11/08/chia-network-cryptocurrency/" target="_blank"><span class="read-more-link">Read more &gt;</span></a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-box row" id="fossybytes">
+                    <div class="col-lg-2 col-sm-12 col-md-12">
+                      <div class="image-box"> <img src="../images/newslogos/fossybytes.png" class="logo-news"> </div>
+                    </div>
+                    <div class="col-lg-10 col-sm-12 col-md-8 news-text-content">
+                      <div class="panel-heading news-heading clearfix"> <span>What Is Chia? — BitTorrent Inventor Announces His “Green” Bitcoin Competitor</span> <time>Nov 09, 2017</time> </div>
+                      <div class="description">
+                        <p> While cryptocurrencies like Bitcoin might be all the rage today, they’re criticised for their heavy consumption of energy. The more energy you use with the help of a powerful hardware, the more cryptocurrency you can mine... </p>
+                        <p>
+                          <a href="https://fossbytes.com/chia-network-green-cryptocurrency-bittorrent-inventor-green-bitcoin-competitor/" target="_blank"><span class="read-more-link">Read more &gt;</span></a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-box row" id="cointelegraph">
+                    <div class="col-lg-2 col-sm-12 col-md-12">
+                      <div class="image-box"> <img src="../images/newslogos/cointelegraph.png" class="logo-news"> </div>
+                    </div>
+                    <div class="col-lg-10 col-sm-12 col-md-8 news-text-content">
+                      <div class="panel-heading news-heading clearfix"> <span>BitTorrent Creator’s Chia Could ‘Fix’ Bitcoin With Own Altcoin By Late 2018</span> <time>Nov 09, 2017</time> </div>
+                      <div class="description">
+                        <p> BitTorrent creator Bram Cohen has debuted his “solution” to Bitcoin which he says resolves “centralization problems” with the virtual currency. </p>
+                       <p>
+                            </p><p>
+                              <a href="https://cointelegraph.com/news/bittorrent-creators-chia-could-fix-bitcoin-with-own-altcoin-by-late-2018" target="_blank"><span class="read-more-link">Read more &gt;</span></a>
+                            </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-box row" id="bitcoinexchange">
+                    <div class="col-lg-2 col-sm-12 col-md-12">
+                      <div class="image-box"> <img src="../images/newslogos/bitcoinexchange.png" class="logo-news"> </div>
+                    </div>
+                    <div class="col-lg-10 col-sm-12 col-md-8 news-text-content">
+                      <div class="panel-heading news-heading clearfix"> <span>Chia Network – BitTorrent Bram Cohen’s Green Cryptocurrency?</span> <time>Nov 13, 2017</time> </div>
+                      <div class="description">
+                        <p> BitTorrent inventor and legendary coder Bram Cohen has launched a new company called Chia Network. That network aims to create a cryptocurrency to compete with bitcoin. </p>
+                       <p>
+                            <a href="https://bitcoinexchangeguide.com/chia-network/" target="_blank"><span class="read-more-link">Read more &gt;</span></a>
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-box row" id="bitcoinmagazine">
+                    <div class="col-lg-2 col-sm-12 col-md-12">
+                      <div class="image-box"> <img src="../images/newslogos/bitcoinmagazine.png" class="logo-news"> </div>
+                    </div>
+                    <div class="col-lg-10 col-sm-12 col-md-8 news-text-content">
+                      <div class="panel-heading news-heading clearfix"> <span>A Greener Cryptocurrency From Bittorrent Inventor, Bram Cohen</span> <time>Nov 29, 2017</time> </div>
+                      <div class="description">
+                        <p> The inventor of Bittorrent has now turned his attention to blockchain technology and building a greener Bitcoin called Chia. Bram Cohen released Bittorrent to the world in 2004, but, in early 2017, he stepped away from the company
+                          he built to focus on blockchain technology. </p>
+                        <!--<p>-->
+                        <!--One of the biggest criticisms about bitcoin is its energy consumption: a single block of bitcoin transactions requires as much energy as it takes to power an American home for a week. However, this energy expenditure also helps keep the network secure and active.-->
+                        <p>
+                          <a href="https://bitcoinmagazine.com/articles/greener-cryptocurrency-bittorrent-inventor-bram-cohen/" target="_blank"><span class="read-more-link">Read more &gt;</span></a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-box row" id="futurismlogo">
+                    <div class="col-lg-2 col-sm-12 col-md-12">
+                      <div class="image-box"> <img src="../images/newslogos/futurismlogo.png" class="logo-news"> </div>
+                    </div>
+                    <div class="col-lg-10 col-sm-12 col-md-8 news-text-content">
+                      <div class="panel-heading news-heading clearfix"> <span>Cryptocurrency “Farming” Could Make Blockchain More Eco-Friendly</span> <time>Nov 9, 2017</time> </div>
+                      <div class="description">
+                        <p> Bitcoin has been creating a lot of buzz lately as more and more people invest in the cryptocurrency. But, behind all this success is a blockchain that’s sustained by miners who, as it turns out, actually use massive amounts of
+                          electricity for each transaction.  </p>
+                        <!--<p>-->
+                        <!--One of the biggest criticisms about bitcoin is its energy consumption: a single block of bitcoin transactions requires as much energy as it takes to power an American home for a week. However, this energy expenditure also helps keep the network secure and active.-->
+                        <p>
+                          <a href="https://futurism.com/cryptocurrency-farming-blockchain-eco-friendly/" target="_blank"><span class="read-more-link">Read more &gt;</span></a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-1"></div>
-            </div>
-          </div>
-
-        <div class="container-fluid" id="social-proof">
-            <div class="row centered">
-              
-              <div class="col">
-
-                  <img src="../images/news-logos.png">
-              </div>
-            </div>
-        </div>
-      
-        <div class="wrap container-fluid" id="about">
-          <div class="row">
-            <div class="col centered">
-                <img src="../images/second_illo.svg">
-            </div>
-            <div class="col-7">
-                 <img src="../images/icon_about.svg">
-                <h2 data-l10n-id="About Chia">About Chia</h2>
-                <p data-l10n-id="about-detail"> Chia Network is a San Francisco-based company focused on improving crypto-currency infrastructure. Our CEO, Bram Cohen, famously invented BitTorrent: the first modern decentralized network protocol and one of the inspirations for the Bitcoin
-                  protocol. Our founding team has experience across the crypto-currency and finance sectors, coming from Tradehill, CryptoCorp and Lightning Labs. </p>
-             
+              <!--</div>-->
             </div>
           </div>
         </div>
-
-        <div class="container-fluid" id="community">
-          <div class="row">
-            <div class="special">
-              <div class="col-6">
-                <div class="content">
-                  <img src="../images/icon_finance.svg">
-                  <h2 data-l10n-id="financial-instituations">Financial Institutions</h2>
-                  <p data-l10n-id="financial-instituation-value-prop"> Digital Money is being increasingly demanded by individual and institutional investors. Chia can help traditional financial institutions meet that demand. </p>
-                  <p class="sub_link_p" data-l10n-id="contact-us">
-                    <a class="sub_link" href="mailto:hello@chia.net">Contact us to find out more<div class="arrow-right"></div></a>
-                  </p>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="content2">
-                  <img src="../images/icon_community.png">
-                  <h2 data-l10n-id="community">Community</h2> 
-                  <p data-l10n-id="join-keybase">Join our Keybase group to participate in discussion.</p>
-                  <ul >
-                      <li data-l10n-id="install-keybase"> 
-                          <p>Install and setup<a href="https://keybase.io/download">Keybase</a></p>
-                      </li>
-                      <li data-l10n-id="request-keybase-access"> <p >Run this in your terminal:<br> keybase team request-access chia_network.public</p>
-                      </li>
-                  </ul>
-                  <p class="sub_link_p" data-l10n-id="join-announcement-list"> Join our
-                  <a class="sub_link" href="https://groups.google.com/a/chia.network/forum/#!forum/announce">announcements list to keep updated <div class="arrow-right"></div></a></p>
-              </div>
-            </div>
-             </div>
-            </div>
-          </div>
-
-      
-      <a name="jobs"></a>
-        <div class="wrap container-fluid" id="jobs" >
-          <div class="row">
-            <div class="col">
-              <img src="../images/icon_work.svg">
-              <h2 data-l10n-id="jobs">Work at Chia</h2>
-            </div>
-            <div class="col-8">
-              <p data-l10n-id="looking-to-hire"> We're looking to hire several technically gifted programmers to work with our team of cryptographers on building our protocol. Must have strong algorithms skills. Cryptography experience is a plus but not required. Remote is okay but being
-                in San Francisco is a plus. To apply, please complete several HackerRank challenges and send a link to your HackerRank profile along with your resume to
-                <a href="mailto:jobs@chia.net">jobs@chia.net</a>. </p>
-            </div>
-          </div>
-        </div>
-      
-      <!--div class="hero community">
-        <div class="wrap container-fluid">
-          <div class="row">
-            <div class="col-lg-6">
-              <h3 data-l10n-id="contribute">Contribute</h3>
-            </div>
-            <div class="col-lg-6">
-              <span data-l10n-id="contribute-question">Are you a developer and want to contribute to the Chia Network? Here are a few ideas:</span>
-              <ol class="info-box">
-                <li data-l10n-id="contribute-idea-one"> Fix existing issues: the
-                  <a href="https://github.com/Chia-Network/website/issues">issue tracker</a> is the best place to find a useful way to contribute to Chia Network. Before starting to write any patches for issues you find, you may want to comment on the issue to make sure nobody else is already working
-                  on it. </li>
-                <li data-l10n-id="contribute-idea-two"> Add Language Translations: We recommend using Github's tools to make a clone of the web site repo and submit changes through there. Take a look at our site on
-                  <a href="https://github.com/Chia-Network/website">github</a> and submit a pull request. </li>
-              </ol>
-            </div>
-          </div>
-        </div>
-      </div-->
-    </div><!--/end of page wrapper-->
-      <footer class="hero page-footer">
+      </div>
+    </div>
+    <footer class="hero page-footer">
         <div class="wrap container-fluid">
           <div class="row">
             <div class="col-lg-3">
-                <img src="images/chia-logo-white.svg" class="logo" />
+                <img src="/images/chia-logo-white.svg" class="logo" />
                 <p> ©Chia Network 2018 </p>
             </div>
             <div class="col-lg-3">
                 <ul>
                   <li>
-                    <p class="header" data-l10n-id="footer-language"> Language </p>
+                    <p class="header"> Language </p>
                   </li>
                   <li>
                     <div id="lang-box"></div>
                   </li>
                 </ul>
-                
+
             </div>
             <div class="col-lg-3">
                 <ul>
                   <li>
-                    <p class="header" data-l10n-id="footer-contact"> Contact </p>
+                    <p class="header"> Contact </p>
                   </li>
-                  
+
                   <li>
-                    <a href="mailto:hello@chia.net">hello@chia.net</a>
+                    <a href="mailto:hello@chia.network">hello@chia.network</a>
                   </li>
                   <li>
                     <p>1-844-257-8433</p>
@@ -276,7 +278,7 @@
             <div class="col-lg-3">
                <ul >
                   <li>
-                    <p class="header" data-l10n-id="footer-find-us"> Find us </p>
+                    <p class="header"> Find us </p>
                   </li>
                   <li class="social_footer">
                     <a href="https://www.facebook.com/Chia-Net-324129071326652/" target="blank">
@@ -305,7 +307,7 @@
           </div>
         </div>
       </footer>
-    </div>
-  </body>
 
-</html>
+
+
+</body></html>
